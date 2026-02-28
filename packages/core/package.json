@@ -1,0 +1,59 @@
+{
+  "name": "@avyn/initials-avatar",
+  "version": "1.0.0",
+  "description": "Framework-agnostic SVG initials avatar generator",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.cjs",
+      "types": "./dist/react.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/vue.mjs",
+      "require": "./dist/vue.cjs",
+      "types": "./dist/vue.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/react.tsx src/vue.ts --format esm,cjs --dts --clean"
+  },
+  "keywords": [
+    "avatar",
+    "initials",
+    "svg",
+    "node",
+    "browser",
+    "ssr"
+  ],
+  "author": "@avyn",
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "vue": "^3.3.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "vue": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.13"
+  }
+}

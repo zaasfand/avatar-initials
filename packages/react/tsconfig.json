@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@avyn/initials-avatar": ["../core/src"]
+    }
+  },
+  "include": ["src/**/*"]
+}
