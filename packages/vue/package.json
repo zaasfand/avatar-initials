@@ -1,6 +1,6 @@
 {
   "name": "@avyn/initials-avatar-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue 3 component wrapper for @avyn/initials-avatar",
   "type": "module",
   "main": "dist/index.cjs",
@@ -24,7 +24,7 @@
     "vue": "^3.3.0"
   },
   "dependencies": {
-    "@avyn/initials-avatar": "1.0.0"
+    "@avyn/initials-avatar": "1.0.1"
   },
   "devDependencies": {
     "tsup": "^8.2.4",

@@ -1,6 +1,6 @@
 {
   "name": "@avyn/initials-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework-agnostic SVG initials avatar generator",
   "type": "module",
   "main": "dist/index.cjs",
